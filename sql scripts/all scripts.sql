@@ -1,0 +1,96 @@
+-- CREATE TABLE IF NOT EXISTS classTable (
+--     `ClassNo` VARCHAR(15),
+--     `Days` VARCHAR(9),
+--     `ClassAt09` VARCHAR(6),
+--     `ClassAt10` VARCHAR(7),
+--     `ClassAt11` VARCHAR(6),
+--     `ClassAt12` VARCHAR(6),
+--     `ClassAt13` VARCHAR(6),
+--     `ClassAt14` VARCHAR(6),
+--     `ClassAt15` VARCHAR(6),
+--     `ClassAt16` VARCHAR(6),
+--     `ClassAt17` VARCHAR(6),
+--     PRIMARY KEY(ClassNo, Days)    
+-- );
+-- INSERT INTO classTable VALUES
+--     ('E101','Monday','$FREE$','CE16','CE16','$FREE$','CE16','CE16','BSC18','$FREE$','$FREE$'),
+--     ('E101','Tuesday','CE16','CE16','CE16','$FREE$','CE16','CE16','$FREE$','BSC16','$FREE$'),
+--     ('E101','Wednesday','CE16','CE16','CE16','$FREE$','CE16','CE16','CE17','$FREE$','$FREE$'),
+--     ('E101','Thursday','CE17','CE17','CE16','$FREE$','CE16','CE16','CE17','CE16','CE16'),
+--     ('E101','Friday','CE17','CE17','CE16','$FREE$','CE16','CE16','CE16','CE16','$FREE$'),
+--     ('E102','Monday','ICT16','ICT16','ICT16','$FREE$','$FREE$','ICT17','ICT17','ICT16','ICT16'),
+--     ('E102','Tuesday','$FREE$','ICT16','ICT16','$FREE$','ICT17','ICT17','ICT17','$FREE$','$FREE$'),
+--     ('E102','Wednesday','ICT17','ICT16','ICT16','$FREE$','ICT17','ICT17','ICT17','ICT16','ICT16'),
+--     ('E102','Thursday','ICT16','BABBA18','ICT17','$FREE$','ICT17','ICT16','ICT16','$FREE$','$FREE$'),
+--     ('E102','Friday','ICT16','ICT16','ICT16','$FREE$','ICT17','ICT17','ICT16','$FREE$','$FREE$'),
+--     ('E103','Monday','ICT17','ICT17','CE17','CE17','$FREE$','CE17','CE17','$FREE$','$FREE$'),
+--     ('E103','Tuesday','CE17','CE17','CE17','BSC18','ICT16','$FREE$','CE17','$FREE$','$FREE$'),
+--     ('E103','Wednesday','CE17','CE17','CE17','$FREE$','ICT16','ICT16','$FREE$','CE17','$FREE$'),
+--     ('E103','Thursday','$FREE$','ICT16','CE17','$FREE$','$FREE$','ICT17','ICT17','$FREE$','$FREE$'),
+--     ('E103','Friday','ICT17','ICT17','ICT17','$FREE$','CP17','BSC18','BSC18','$FREE$','$FREE$'),
+--     ('E104','Monday','EE16','EE16','EE16','EE16','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$'),
+--     ('E104','Tuesday','EE16','EE16','EE16','EE16','$FREE$','EE16','EE16','$FREE$','$FREE$'),
+--     ('E104','Wednesday','EE16','EE16','EE16','EE16','BSC16','BSC16','$FREE$','BSC18','BSC18'),
+--     ('E104','Thursday','EE16','EE16','EE16','EE16','$FREE$','BSC18','BSC18','$FREE$','$FREE$'),
+--     ('E104','Friday','EE17','$FREE$','EE17','EE16','$FREE$','BSC18','BSC18','$FREE$','$FREE$'),
+--     ('E105','Monday','ME15','ME15','ME15','ME15','$FREE$','ME16','ME16','ME16','$FREE$'),
+--     ('E105','Tuesday','ME15','ME15','ME15','ME16','ME16','ME16','ME16','ME16','ME16'),
+--     ('E105','Wednesday','ME15','ME15','ME15','$FREE$','ME16','ME16','ME16','ME16','$FREE$'),
+--     ('E105','Thursday','ME15','ME15','ME15','ME15','$FREE$','ME16','ME16','$FREE$','$FREE$'),
+--     ('E105','Friday','ME15','ME15','ME15','ME15','ME14','ME16','$FREE$','$FREE$','$FREE$'),
+--     ('E-CPLAB1','Monday','$FREE$','$FREE$','ICT17','ICT17','ICT16','ICT16','CE16','CE16','$FREE$'),
+--     ('E-CPLAB1','Tuesday','$FREE$','ICT17','ICT17','$FREE$','$FREE$','$FREE$','CE16','CE16','$FREE$'),
+--     ('E-CPLAB1','Wednesday','$FREE$','ICT17','ICT17','$FREE$','$FREE$','$FREE$','CE16','CE16','$FREE$'),
+--     ('E-CPLAB1','Thursday','CE16','CE16','ICT16','ICT16','$FREE$','$FREE$','CE16','CE16','$FREE$'),
+--     ('E-CPLAB1','Friday','CE16','CE16','$FREE$','$FREE$','ICT16','ICT16','$FREE$','$FREE$','$FREE$'),
+--     ('E-CPLAB2','Monday','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$','CE16','CE16','$FREE$'),
+--     ('E-CPLAB2','Tuesday','$FREE$','$FREE$','$FREE$','$FREE$','CE17','CE17','CE16','CE16','$FREE$'),
+--     ('E-CPLAB2','Wednesday','$FREE$','$FREE$','$FREE$','$FREE$','CE17','CE17','CE16','CE16','$FREE$'),
+--     ('E-CPLAB2','Thursday','$FREE$','$FREE$','$FREE$','$FREE$','CE17','CE17','$FREE$','$FREE$','$FREE$'),
+--     ('E-CPLAB2','Friday','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$','$FREE$'),
+--     ('E-NETWORKLAB','Monday','$FREE$','$FREE$','$FREE$','$FREE$','ICT16','ICT16','$FREE$','$FREE$','$FREE$'),
+--     ('E-NETWORKLAB','Tuesday','$FREE$','$FREE$','$FREE$','$FREE$','CE17','CE17','$FREE$','$FREE$','$FREE$'),
+--     ('E-NETWORKLAB','Wednesday','$FREE$','$FREE$','$FREE$','$FREE$','CE17','CE17','$FREE$','$FREE$','$FREE$'),
+--     ('E-NETWORKLAB','Thursday','$FREE$','$FREE$','ICT16','ICT16','CE17','CE17','$FREE$','$FREE$','$FREE$'),
+--     ('E-NETWORKLAB','Friday','$FREE$','$FREE$','$FREE$','$FREE$','ICT16','ICT16','$FREE$','$FREE$','$FREE$');
+
+-- select * from classTable;-- 
+
+-- CREATE TABLE IF NOT EXISTS classStructure (
+--     `Block` VARCHAR(1),
+--     `classNo` VARCHAR(15),
+--     `Floor` VARCHAR(12),
+--     `Type` VARCHAR(12),
+--     `Strength` INT,
+--     primary key(classNo)
+-- );
+-- INSERT INTO classStructure VALUES
+--     ('E','E101','Ground Floor','Lecture Hall',100),
+--     ('E','E102','Ground Floor','Lecture Hall',100),
+--     ('E','E103','Ground Floor','Lecture Hall',100),
+--     ('E','E104','Ground Floor','Lecture Hall',100),
+--     ('E','E105','Ground Floor','Lecture Hall',100),
+--     ('E','E106','Ground Floor','Lecture Hall',100),
+--     ('E','E107','Ground Floor','Lecture Hall',100),
+--     ('E','E108','Ground Floor','Lecture Hall',100),
+--     ('E','E-CPLAB1','Second Floor','Lab',50),
+--     ('E','E-CPLAB2','Second Floor','Lab',50),
+--     ('E','E-NETWORKLAB','Second Floor','Lab',50);
+-- drop table classTable;
+-- select * from classStructure;
+
+-- ALTER TABLE classTable
+-- ADD foreign key (ClassNo)
+-- REFERENCES classStructure(classNo);
+
+-- select * from classStructure;
+
+
+-- Below query returns too many rows 
+--  select Strength, Days
+--  from classStructure,classTable
+--  where Strength > 99
+-- 
+-- select *from classTable
+-- where Days="Monday" and ClassAt09 = "$FREE$"
+
