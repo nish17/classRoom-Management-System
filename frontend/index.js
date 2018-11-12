@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Password@123"
+  password: "Password@123",
   database: "newClassRoom"
 });
 
