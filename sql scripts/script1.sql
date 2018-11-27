@@ -1,6 +1,6 @@
--- use newClassRoom;
--- select * from  classTable 
--- where ClassNo="E101" and (Days="Wednesday" or Days="Friday") 
+use newClassRoom;
+select * from  classTable 
+where ClassNo="E101" and (Days="Wednesday" or Days="Friday") 
 -- ----------------------------------
 -- Find free classes in E Block on wednesday at 9am
 -- select classTable.ClassNo,Days,ClassAt09,BLockNo 
