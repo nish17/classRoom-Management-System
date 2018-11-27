@@ -2,7 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
 const path = require("path");
+
 const app = express();
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 const connection = mysql.createConnection({
   host: "localhost",
@@ -64,8 +67,9 @@ app.post("/sql-query", (req, res) => {
       }
       // a.push(rows);
       // CreateTable(rowHeader, a);
-      res.json(a);
+      // res.json(a);
       // res.send(rows);
+      res.render("testTable", { page_title: "Test Table", data: rows });
     }
   });
   // res.send(req.body.sql);
